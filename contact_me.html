@@ -4,22 +4,103 @@
         <title>Contact Me | Abhijnan S. Gogoi</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/styles.css">
+        <style>
+            /*
+            #form-box {
+                margin-left: auto;
+                margin-right: auto;
+            */
+            #contact-form {
+                margin-top: 5px;
+                text-align: center;
+            }
+
+            #form-text {
+                color: #1f5f5f;
+            }
+
+            label {
+                background-color:#E4FBFF;
+                display: inline-block;
+                margin-top: 25px;
+                text-align: left;
+            }
+
+            input {
+                background-color:#E4FBFF;
+                border: none;
+                border-bottom: 1px solid #000000;
+                max-width: 500px;
+                width: 80%;
+            }
+
+            textarea {
+                background-color:#E4FBFF;
+                border: none;
+                border-bottom: 1px solid #000000;
+                max-width: 500px;
+                width: 80%;
+            }
+
+            #submit {
+                background-color: rgb(46, 216, 46);
+                border-radius: 10px;
+                height: 35px;
+                width: 110px;
+            }
+
+            #submit:hover {
+                opacity: 75%;
+            }
+
+            #reset {
+                background-color: rgb(255, 0, 0);
+                border-radius: 10px;
+                height: 35px;
+                width: 110px;
+            }
+
+            #reset:hover {
+                opacity: 75%;
+            }
+        </style>
     </head>
     <body>
-        <h3>Contact Me</h3>
-        <form action="mailto:abhijnansaraswat@gmail.com" method="POST" enctype="text/plain">
-            <label>Your Name</label>
-            <input name="Name" type="text" required>
-            <br />
-            <label>Your Email</label>
-            <input name="Email" type="email" required>
-            <br />
-            <label>Your message</label>
-            <br />
-            <textarea name="Message" cols="46" rows="5"></textarea>
-            <br />
-            <input type="reset">
-            <input type="submit">
-        </form>
+        <br />
+        <img class="cloud-img" src="Images/cloud.png" style="margin-left: 5%;">
+		<img class="cloud-img" src="Images/cloud.png" style="margin-left: 20%;">
+		<img class="cloud-img" src="Images/cloud.png" style="margin-left: 30%;">
+		<img class="cloud-img" src="Images/cloud.png" style="margin-left: 50%;">
+		<img class="cloud-img" src="Images/cloud.png" style="margin-left: 30%;">
+
+        <div id="contact-form">
+            <h3 style="margin: 0px">Contact Me</h3>
+            <form action="mailto:abhijnansaraswat@gmail.com" method="POST">
+                <p id="form-text">NOTE: Currently this form is not secure. But it works.</p><br />
+    
+                <label>Name<span style="color:red">*</span></label>
+                <br />
+                <input name="name" required></textarea>
+                <br />
+    
+                <label>Email<span style="color:red">*</span></label>
+                <br />
+                <input type="email" required></textarea>
+                <br />
+    
+                <label>Message<span style="color:red">*</span></label>
+                <br />
+                <textarea name="message" rows="10" required></textarea>
+                <br />
+                
+                <input type="reset" id="reset">
+                <input type="submit" id="submit">
+                <br />
+                <br />
+            </form>
+        </div>
+        <footer>
+			<a href="index.html" style="color: #7679ff;">Back</a>
+		</footer>
     </body>
 </html>
