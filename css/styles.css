@@ -18,9 +18,20 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	text-decoration: underline;
+}
+
 footer {
 	background-color: #00774f;
 	border-top-left-radius: 100%;
 	border-top-right-radius: 100%;
 	height: 100px;
+	padding: 10px;
+}
+
+.cloud-img {
+	margin: 0px;
+	max-width: 130px;
+	width: 20%;
 }
