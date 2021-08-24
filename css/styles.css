@@ -1,10 +1,11 @@
-html,body {
+html, body {
 	background-color:#E4FBFF;
 	font-family: Soleil,Arial,sans-serif;
+	font-size: 16px;
 	margin: 0px;
 }
 
-h1,h3 {
+h1, h3 {
 	color:#66BFBF;
 }
 
@@ -22,16 +23,55 @@ a:hover {
 	text-decoration: underline;
 }
 
-footer {
-	background-color: #00774f;
-	border-top-left-radius: 100%;
-	border-top-right-radius: 100%;
-	height: 100px;
-	padding: 10px;
-}
-
 .cloud-img {
 	margin: 0px;
 	max-width: 130px;
 	width: 20%;
 }
+
+/***********************************Footer-CSS***********************************/
+
+footer {
+	height: 600px;
+	max-height: 600px;
+	min-height: 300px;
+}
+
+footer a {
+	margin: 0px;
+}
+
+#scenery {
+	height: 80%;	/*500px*/
+	margin-bottom: 0px;
+	vertical-align: top;
+	width: 100%;
+}
+
+#windmill {
+	height: 200px;
+	margin-left: 50%;
+	position: absolute;
+	right: 2%;
+	width: 160px;
+}
+
+#footer-content {
+	background-color: #00774f;
+	margin: 0px;
+	padding: 10px;
+}
+
+.footer-column {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer-cont-title {
+	margin-bottom: 8px;
+}
+
+footer a {
+	color: #7679ff;
+}
+
