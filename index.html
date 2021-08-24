@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -7,6 +6,7 @@
 		<title>Abhijnan Saraswat Gogoi | Personal Website</title>
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="icon" href="Images\icon.ico">
+		
 		<style>
 			#profile-picture {
 				border-radius: 100%;
@@ -23,23 +23,26 @@
 				text-align: center;
 			}
 		</style>
+		
+		<script>
+			alert("Go to footer to get the navigation links.");
+		</script>
 	</head>
 	<body>
 		<!--Introducing Myself-->
-		<div id="top">
+		<div>
 			<img class="cloud-img" src="Images/cloud.png" style="margin-left: 5%;">
 			<img class="cloud-img" src="Images/cloud.png" style="margin-left: 20%;">
 			<img class="cloud-img" src="Images/cloud.png" style="margin-left: 30%;">
 			<img class="cloud-img" src="Images/cloud.png" style="margin-left: 50%;">
 			<img class="cloud-img" src="Images/cloud.png" style="margin-left: 30%;">
-			<div id="image-holder">
+			<div>
 				<img id="profile-picture" src="Images\dp.jpeg" alt="Profile Picture">
 			</div>
 			<div id="introduction">
 				<h1>Abhijnan Saraswat Gogoi</h1>
 				<em>
 					A Lifelong Learner<br />
-					Founder of <a href="">Wonderful Universe</a>
 				</em>
 				<p>
 					Hello! This is Abhijnan Saraswat Gogoi. I am very much excited about Astronomy and Astrophysics especially <strong>Black Holes.</strong> My mother tongue is Assamese. I love Physics and Mathematics. I know some programming also. This webpage was created using my coding skills.
@@ -74,9 +77,49 @@
 			</ol>
 		</div>
 		
+		<!--Footer-->
 		<footer>
-			<a href="contact_me.html" style="color: #7679ff;">Contact Me!</a>
-			<a href="https://www.sololearn.com/Profile/11240450"></a>
+			<svg id="scenery" xmlns="http://www.w3.org/2000/svg/">
+				<ellipse rx="90%" ry="100%" cx="50%" cy="140%" fill="#00c77f"/>	<!--Farthest hill-->
+				<ellipse rx="109%" ry="100%" cx="100%" cy="140%" fill="#00975f"/>	<!--Windmill hill-->
+				<ellipse rx="109%" ry="100%" cx="0%" cy="140%" fill="#00774f"/>	<!--Nearest hill-->
+			</svg>
+			<svg id="windmill" xmlns="http://www.w3.org/2000/svg/">	<!--Windmill-->
+				<g>	<!--The house-->
+					<polygon points="45 200, 115 200, 110 125, 80 90, 50 125" stroke="#000000" fill="#ffffff"/>	<!--White building-->
+					<polygon points="73 200, 88 200, 88 175, 73 175" stroke="#000000"/>	<!--The door-->
+					<polygon points="60 160, 67 160, 67 150, 60 150" stroke="#000000"/>	<!--The window first floor-->
+					<polygon points="93 138, 100 138, 100 128, 93 128" stroke="#000000"/>	<!--The window top floor-->
+				</g>
+				<g>	<!--The wind turbine-->
+					<polygon points="80 90, 80 25, 90 25, 90 75, 80 75, 
+									80 90, 145 90, 145 100, 95 100, 95 90, 
+									80 90, 80 155, 70 155, 70 105, 80 105
+									80 90, 15 90, 15 80, 65 80, 65 90" 
+									stroke="#000000" fill="none">
+						<animateTransform attributeName="transform" type="rotate" from="0 80 90" to="-360 80 90" begin="0s" dur="8s" repeatCount="indefinite"/>
+					</polygon>
+					<circle cx="80px" cy="90px" r="5px" fill="#000000"/>
+				</g>
+			</svg>
+			
+			<div id="footer-content">
+				<div class="footer-column">	<!--Navigation-->
+					<p class="footer-cont-title">NAVIGATION</p>
+					<div><a href="index.html">Homepage</a></div>
+					<div><a href="contact_me.html">Contact Me!</a></div>
+				</div>
+				<div class="footer-column">	<!--Social Media Pages-->
+					<p class="footer-cont-title">SOCIAL MEDIA PAGES</p>
+					<div><a href="https://www.facebook.com/100061980231856/">Facebook</a></div>
+					<div><a href="https://www.github.com/Abhijnan-2/">GitHub</a></div>
+					<div><a href="https://www.quora.com/profile/Abhijnan-Saraswat-Gogoi">Quora</a></div>
+					<div><a href="https://www.sololearn.com/Profile/11240450">SoloLearn</a></div>
+					<div><a href="https://www.twitter.com/AbhijnanGogoi/">Twitter</a></div>					
+				</div>
+				<p style="text-align: right; margin: 0px;">Last updated on 24th August, 2021</p>				
+			</div>
 		</footer>
 	</body>
 </html>
+
