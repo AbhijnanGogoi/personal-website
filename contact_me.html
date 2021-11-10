@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Contact Me | Abhijnan S. Gogoi</title>
+        <title>Contact Me | Abhijnan Gogoi</title>
         <meta charset="utf-8">
+        <meta name="screen" content="width:screen-width">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="Images/cloud.png">
         
         <style>
             #contact-form {
@@ -12,14 +14,14 @@
             }
 
             label {
-                background-color:#E4FBFF;
+                background-color: inherit;
                 display: inline-block;
                 margin-top: 25px;
                 text-align: left;
             }
 
             input {
-                background-color:#E4FBFF;
+                background-color: inherit;
                 border: none;
                 border-bottom: 1px solid #000000;
                 max-width: 500px;
@@ -27,7 +29,7 @@
             }
 
             textarea {
-                background-color:#E4FBFF;
+                background-color: inherit;
                 border: none;
                 border-bottom: 1px solid #000000;
                 max-width: 500px;
@@ -58,14 +60,18 @@
         </style>
     </head>
     <body>
-        <br />
-        <img class="cloud-img" src="Images/cloud.png" style="margin-left: 5%;">
-		<img class="cloud-img" src="Images/cloud.png" style="margin-left: 20%;">
-		<img class="cloud-img" src="Images/cloud.png" style="margin-left: 30%;">
-		<img class="cloud-img" src="Images/cloud.png" style="margin-left: 50%;">
-		<img class="cloud-img" src="Images/cloud.png" style="margin-left: 30%;">
+	<!--Navigation Bar (Clouds!)-->
+
+		<div id="nav-bar">
+			<a class="nav-link-holder" href="index.html" style="margin-left: 5%;"><img class="nav-cloud" src="Images/cloud.png"><div class="nav-text">Home</div></a>
+			<a class="nav-link-holder" href="contact_me.html" style="margin-left: 20%;"><img class="nav-cloud" src="Images/cloud.png"><div class="nav-text">Contact Me</div></a>
+			<a class="nav-link-holder" href="https://github.com/Abhijnan-2/" style="margin-left: 30%;"><img class="nav-cloud" src="Images/cloud.png"><div class="nav-text">GitHub</div></a>
+			<a class="nav-link-holder" href="https://www.twitter.com/AbhijnanGogoi/" style="margin-left: 50%;"><img class="nav-cloud" src="Images/cloud.png"><div class="nav-text">Twitter</div></a>
+			<a class="nav-link-holder" href="index.html#footer-content" style="margin-left: 30%;"><img class="nav-cloud" src="Images/cloud.png"><div class="nav-text">Click for more links</div></a>
+			<div class="nav-link-holder" href="" style="margin-left: 30%;"><img class="nav-cloud" src="Images/cloud.png"><div class="nav-text" style="bottom: 78px;">Scroll down if content not visible</div></div>
+		</div>
 		
-		<!--Form-->
+	<!--Form-->
         <div id="contact-form">
             <h3 style="margin: 0px">Contact Me</h3>
             <form action="mailto:abhijnansaraswat@gmail.com" method="POST">
@@ -133,9 +139,8 @@
 					<div><a href="https://www.sololearn.com/Profile/11240450">SoloLearn</a></div>
 					<div><a href="https://www.twitter.com/AbhijnanGogoi/">Twitter</a></div>					
 				</div>
-				<p style="text-align: right; margin: 0px;">Last updated on 24th August, 2021</p>				
+				<p style="text-align: right; margin: 0px;">Last updated on 30th October, 2021</p>				
 			</div>
 		</footer>
-    </body>
+	</body>
 </html>
-
