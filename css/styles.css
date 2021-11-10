@@ -23,10 +23,24 @@ a:hover {
 	text-decoration: underline;
 }
 
-.cloud-img {
+/***********************************Navigation-Clouds-CSS***********************************/
+
+.nav-link-holder {
+	display: inline-block;
+	padding: 0px;
+	width: 150px;
+}
+
+.nav-cloud {
 	margin: 0px;
-	max-width: 130px;
-	width: 20%;
+	max-width: 150px;
+	width: 100%;
+}
+
+.nav-text {
+	bottom: 63px;
+	position: relative;
+	text-align: center;
 }
 
 /***********************************Footer-CSS***********************************/
@@ -74,4 +88,3 @@ footer a {
 footer a {
 	color: #7679ff;
 }
-
