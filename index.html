@@ -10,25 +10,24 @@
 		<style>
 			/***********************************************Introduction_CSS***********************************************/
 			#profile-picture {
-				border: 5px solid #96DFDF;
+				border: 5px solid var(--dark-color);
 				border-radius: 100%;
 				display: flex;
 				margin-left: auto;
 				margin-right: auto;
-				max-height: 200px;
-				max-width: 200px;
-				height: 35%;
-				width: 35%;
+				height: 200px;
+				width: 200px;
 			}
 
 			#introduction {
 				text-align: center;
 			}
 			
+			
 			/***********************************************Boxes_CSS***********************************************/
 			
 			.content-box {
-				background-color: #EFFFFF;
+				background-color: rgba(255, 255, 255, 0.5);	/*	#EFFFFF; */
 				border-radius: 10px;
 				margin-left: auto;
 				margin-right: auto;
@@ -39,7 +38,7 @@
 			}
 			
 			.content-box-head {
-				background-color: #96DFDF;	/*	#E4FBFF	*/
+				background-color: var(--dark-color);	/*	#96DFDF;	*/	/*	#E4FBFF	*/
 				border-top-left-radius: 10px;
 				border-top-right-radius: 10px;
 				border-bottom-left-radius: 30%;
@@ -48,8 +47,20 @@
 				padding: 0px;
 				padding-top: 5px;
 				padding-bottom: 5px;
-				text-align: center;
 				width: 100%;
+				
+				font-size: 18px;
+				text-align: center;
+			}
+			
+			#xyz {
+				border: 1px solid #fff;
+				border-radius: 50%;
+				height: 150px;
+				width: 150px;
+				margin-left: auto;
+				margin-right: auto;
+				box-shadow: 0px 3px 1px #9e9a9a;
 			}
 			
 			/***********************************************Education_CSS***********************************************/
@@ -57,48 +68,71 @@
 			.schl-img {
 				border-radius: 30px;
 				display: block;
-				max-width: 300px;
-				min-width: 180px;
-				opacity: 40%;
-				width: 50%;
-			}
-			
-			.schl-img:hover {
-				opacity: 100%;
+				width: 280px;
 			}
 			
 		</style>
 	</head>
 	<body>
+		<!--Background designs/image-->
+		
 		<!--Navigation Bar (Clouds!)-->
-
 		<div id="nav-bar">
-			<a class="nav-link-holder" href="index.html" style="margin-left: 5%;"><img class="nav-cloud" src="https://www.jing.fm/clipimg/full/276-2760356_cartoon-transparent-background-clouds.png"><div class="nav-text">Home</div></a>
-			<a class="nav-link-holder" href="contact_me.html" style="margin-left: 20%;"><img class="nav-cloud" src="https://www.jing.fm/clipimg/full/276-2760356_cartoon-transparent-background-clouds.png"><div class="nav-text">Contact Me</div></a>
-			<a class="nav-link-holder" href="https://github.com/Abhijnan-2/" style="margin-left: 30%;"><img class="nav-cloud" src="https://www.jing.fm/clipimg/full/276-2760356_cartoon-transparent-background-clouds.png"><div class="nav-text">GitHub</div></a>
-			<a class="nav-link-holder" href="https://www.twitter.com/AbhijnanGogoi/" style="margin-left: 50%;"><img class="nav-cloud" src="https://www.jing.fm/clipimg/full/276-2760356_cartoon-transparent-background-clouds.png"><div class="nav-text">Twitter</div></a>
-			<a class="nav-link-holder" href="#footer-content" style="margin-left: 30%;"><img class="nav-cloud" src="https://www.jing.fm/clipimg/full/276-2760356_cartoon-transparent-background-clouds.png"><div class="nav-text">Click for more links</div></a>
-			<div class="nav-link-holder" href="" style="margin-left: 30%;"><img class="nav-cloud" src="https://www.jing.fm/clipimg/full/276-2760356_cartoon-transparent-background-clouds.png"><div class="nav-text" style="bottom: 78px;">Scroll down if content not visible</div></div>
+			<a class="nav-link-holder" href="index.html" style="margin-left: 5%;">
+				<img class="nav-cloud" src="https://www.jing.fm/clipimg/full/276-2760356_cartoon-transparent-background-clouds.png">
+				<div class="nav-text">Home</div>
+			</a>
+			<a class="nav-link-holder" href="contact_me.html" style="margin-left: 20%;">
+				<img class="nav-cloud" src="https://www.jing.fm/clipimg/full/276-2760356_cartoon-transparent-background-clouds.png">
+				<div class="nav-text">Contact Me</div>
+			</a>
+			<a class="nav-link-holder" href="https://github.com/Abhijnan-2/" style="margin-left: 30%;">
+				<img class="nav-cloud" src="https://www.jing.fm/clipimg/full/276-2760356_cartoon-transparent-background-clouds.png">
+				<div class="nav-text">GitHub</div>
+			</a>
+			<a class="nav-link-holder" href="https://www.twitter.com/AbhijnanGogoi/" style="margin-left: 50%;">
+				<img class="nav-cloud" src="https://www.jing.fm/clipimg/full/276-2760356_cartoon-transparent-background-clouds.png">
+				<div class="nav-text">Twitter</div>
+			</a>
+			<a class="nav-link-holder" href="#footer-content" style="margin-left: 30%;">
+				<img class="nav-cloud" src="https://www.jing.fm/clipimg/full/276-2760356_cartoon-transparent-background-clouds.png">
+				<div class="nav-text">Click for more links</div>
+			</a>
+			<div class="nav-link-holder" style="margin-left: 30%;">
+				<img class="nav-cloud" src="https://www.jing.fm/clipimg/full/276-2760356_cartoon-transparent-background-clouds.png">
+				<div class="nav-text" style="bottom: 78px;">Scroll down if content not visible</div>
+			</div>
 		</div>
 
 		<!--Introducing Myself-->
 		<div>
 			<div>
-				<img id="profile-picture" src="Images/profile-picture.png" alt="Profile Picture">
+				<img id="profile-picture" src="https://abhijnan-2.github.io/personal-website/Images/profile-picture.png" alt="Profile Picture">
 			</div>
 			<div id="introduction">
-				<h1><strong>Abhijnan Saraswat Gogoi</strong></h1>
-				<em>
+				<h1>I'm<br /><strong>Abhijnan Saraswat Gogoi</strong></h1>
+				<i>
 					A Lifelong Learner<br />
-				</em>
+				</i>
 				<p>
-					Hello! This is Abhijnan Saraswat Gogoi. I am very much excited about Astronomy and Astrophysics especially <strong>Black Holes.</strong> My mother tongue is Assamese. I love Physics and Mathematics. I know some programming also. This webpage was created using my coding skills.
+					Hello! I am very much excited about Astronomy and Astrophysics especially <b>Black Holes.</b> My mother tongue is Assamese. I love Physics and Mathematics. I know some programming also. This website was created using my coding skills.
 				</p>
-				<img class="nav-cloud" src="https://www.jing.fm/clipimg/full/276-2760356_cartoon-transparent-background-clouds.png" style="margin-left: 10%">
-				<img class="nav-cloud" src="https://www.jing.fm/clipimg/full/276-2760356_cartoon-transparent-background-clouds.png" style="margin-left: 15%;">
-				<img class="nav-cloud" src="https://www.jing.fm/clipimg/full/276-2760356_cartoon-transparent-background-clouds.png" style="margin-left: 20%;">
-				<img class="nav-cloud" src="https://www.jing.fm/clipimg/full/276-2760356_cartoon-transparent-background-clouds.png" style="margin-left: 30%;">
 			</div>
+		</div>
+		
+		<div >
+				<img class="nav-cloud"
+					src="https://www.jing.fm/clipimg/full/276-2760356_cartoon-transparent-background-clouds.png"
+					style="margin-left: 10%">
+				<img class="nav-cloud"
+					src="https://www.jing.fm/clipimg/full/276-2760356_cartoon-transparent-background-clouds.png"
+					style="margin-left: 15%;">
+				<img class="nav-cloud"
+					src="https://www.jing.fm/clipimg/full/276-2760356_cartoon-transparent-background-clouds.png"
+					style="margin-left: 20%;">
+				<img class="nav-cloud"
+					src="https://www.jing.fm/clipimg/full/276-2760356_cartoon-transparent-background-clouds.png"
+					style="margin-left: 30%;">
 		</div>
 		
 		<!--My Hobbies-->
@@ -109,7 +143,7 @@
 				<li>Wondering</li>
 				<li>Listening to music</li>
 				<li>Programming/coding</li>
-				<li>Playing Tabla and singing</li>
+				<li>Playing Tabla/Piano and singing</li>
 				<li>Collecting rubbish and keeping them under the bed until someone throws them away</li>
 				<li>Photography</li>
 				<li>Reading</li>
@@ -187,14 +221,34 @@
 				</div>
 				<div class="footer-column">	<!--Social Media Pages-->
 					<p class="footer-cont-title">SOCIAL MEDIA PAGES</p>
-					<div><a href="https://www.facebook.com/100061980231856/">Facebook</a></div>
-					<div><a href="https://www.github.com/Abhijnan-2/">GitHub</a></div>
-					<div><a href="https://www.quora.com/profile/Abhijnan-Saraswat-Gogoi">Quora</a></div>
-					<div><a href="https://www.sololearn.com/Profile/11240450">SoloLearn</a></div>
-					<div><a href="https://www.twitter.com/AbhijnanGogoi/">Twitter</a></div>					
+					<div><a href="https://www.facebook.com/100061980231856/">
+						<img class="social-icon" src="Images/social-media-icons/facebook.png">
+						Facebook
+					</a></div>
+					<div><a href="https://www.github.com/Abhijnan-2/">
+						<img class="social-icon" src="Images/social-media-icons/github.png">
+						GitHub
+					</a></div>
+					<div><a href="https://www.quora.com/profile/Abhijnan-Saraswat-Gogoi">
+						<img class="social-icon" src="Images/social-media-icons/quora.png">
+						Quora
+					</a></div>
+					<div><a href="https://www.sololearn.com/Profile/11240450">
+						<img class="social-icon" src="Images/social-media-icons/sololearn.png">
+						SoloLearn
+					</a></div>
+					<div><a href="https://www.twitter.com/AbhijnanGogoi/">
+						<img class="social-icon" src="Images/social-media-icons/twitter.png">
+						Twitter
+					</a></div>					
 				</div>
-				<p style="text-align: right; margin: 0px;">Last updated on 18th November, 2021</p>				
+				<p style="text-align: right; margin: 0px;">Last updated on 11th March, 2022</p>				
 			</div>
 		</footer>
+		
+		
+		<!--Top button-->
+		<div id="top-button"><a href="#nav-bar">Top</a></div>
+		
 	</body>
 </html>
