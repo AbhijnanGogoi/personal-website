@@ -97,7 +97,7 @@ a:hover {
 
 footer {
 	background-image: var(--ftr-sky);
-	height: 600px;
+	/*height: 600px;*/
 }
 
 footer a {
@@ -105,7 +105,7 @@ footer a {
 }
 
 #scenery {
-	height: 80%;	/*500px*/
+	height: 500px;	/*80%*/
 	width: 100%;
 	
 	margin-bottom: 0px;
